@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>iraffle</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.6">
+
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+      #mainContainer {
+          margin: auto;
+          padding: 25px;
+          width: 50%;
+          height: 50%;
+          background-color: green;
+      }
+      #insideContainer {
+          position: absolute;
+          top: 50%;
+          transform: translate(0,-50%);
+          margin: auto;
+          width: 500px;
+          height: 500px;
+          background-color: beige;
+      }
+      #iraffle_page {
+          margin-top: 50px;
+          margin-left: 50px;
+          width: 400px;
+          height: 400px;
+      }
+      .inputs {
+          position: absolute;
+          width: 130px;
+          height: 35px;
+          border-radius: 15px;
+          padding: 0px;
+          font-size: 24px;
+
+      }
+      .btn {
+          position: absolute;
+          width: 200px;
+          height: 35px;
+          border-radius: 15px;
+          padding: 0px;
+          font-size: 24px;
+          color: white;
+          background-color: green;
+      }
+      #startNumInput {
+          top: 107px;
+          left: 265px;
+      }
+      #endNumInput {
+          top: 177px;
+          left: 265px;
+      }
+      #digitsInput {
+          top: 240px;
+          left: 265px;
+      }
+      #multiOutsInput {
+          top: 304px;
+          left: 265px;
+      }
+      #generateNumber {
+          top: 365px;
+          left: 150px;
+      }
+
+  </style>
+    <script defer type="text/javascript">
+        // counting function 1
+        //alert('javascript Working');
+        function digits_count(n) {
+            var count = 0;
+            if (n >= 1) ++count;
+
+            while (n / 10 >= 1) {
+                n /= 10;
+                ++count;
+            }
+            return count;
+        }
+
+        // counting function 2 "bahala kayo ano gusto nyiong gamitin"
+        // in this example getlength gamit ko mas madali intindihin eh.
+
+        function getlength(number) {
+            return number.toString().length;
+        }
+
+        function iraffle() {
+            var startNumInput = document.getElementById('startNumInput').value * 1; // kung walang * 1 sa value the input hindi ito magiging number, string kasi yung value.
+            var endNumInput = document.getElementById('endNumInput').value * 1;
+            var digitsInput = document.getElementById('digitsInput').value * 1;
+            var multiOutsInput = document.getElementById('multiOutsInput').value * 1;
+
+            // early return if one of the inputs is null or invalid key
+            //alert('the value of start is ' + startNumInput);
+            if (startNumInput == null || startNumInput == undefined || isNaN(startNumInput)) return alert('start number must be a number');
+            if (endNumInput == null || endNumInput == undefined || isNaN(endNumInput)) return alert('end number must be a number');
+            if (digitsInput == null || digitsInput == undefined || isNaN(digitsInput)) return alert('digits must be a number, if you dont want the 000s just type 1');
+            if (multiOutsInput == null || multiOutsInput == undefined || isNaN(multiOutsInput)) return alert('multiouts number must be a number');
+
+            if (startNumInput == 0) return alert('start number input is required!');
+            if (endNumInput == 0) return alert('end number input is required!');
+            if (digitsInput == 0) return alert('digits input is required!, if you dont want the 000s just type 1');
+            if (multiOutsInput == 0) return alert('multiouts input is required!');
+
+            var startNum = startNumInput;
+            var endNum = endNumInput;
+            var digits = digitsInput;
+            var multiOuts = multiOutsInput;
+
+
+            // note may error if the number is 1 to 50 and the multi out is 8, need to fix
+            // temporary solution: dagdagan mo nalang yung end number ng 1, bale 51 na insead of 50
+            // tapos burahin mo nalang sa notepad yung last number gets?
+            // bugs: kapag match sa digits ang number nag add ng comma ","
+            ///////////////////////////////////////////////
+
+
+            // security set up github.io
+            //var headCheck = window.location.href;
+            //var headCheckString = headCheck.toString();
+            //var headCheckSimplify = headCheckString.substring(0,28);
+            //var pass = 'https://sensielong.github.io';
+            // end of verification
+
+            var pcs = endNum - startNum;
+            var rows = pcs / multiOuts;
+            if (rows % 1 != 0) {
+                var rowLimit = Math.floor(rows) + 1;
+            } else {
+                var rowLimit = rows + 1;
+            };
+
+            var columnStart = '';
+            var result = '';
+
+            // start of numbering engine column
+            //if (headCheckSimplify != pass) return console.log('app not genuin');
+            // check if the app is not in other domain
+            for (a = 1; a < 2; a++) {
+                for (b = 1; b <= multiOuts; b++) {
+                    if ((a * b) == multiOuts) {
+                        columnStart += 'No.' + (a * b);
+                    } else {
+                        columnStart += 'No.' + (a * b) + ',';
+                    };
+                };
+                columnStart += '\n';
+            };
+            // numbering engine with getlength function
+            for (var i = 0; i < rowLimit; i++) {
+                for (var j = startNum; j <= endNum; j += rowLimit) {
+
+                    if (getlength(i + j) < digits && (i + j + rowLimit) <= endNum) {
+                        // add zero kung hindi sapat ang digits
+                        for (var k = getlength(i + j); k < digits; k++) {
+                            result += '0';
+                        };
+                        result += (i + j) + ',';
+
+                    } else if (getlength(i + j) <= digits && (i + j + rowLimit) > endNum && (i + j) <= endNum) {
+                        // add zero kung hindi sapat ang digits
+                        for (var k = getlength(i + j); k < digits; k++) {
+                            result += '0';
+                        };
+                        result += (i + j);
+
+                    } else if (getlength(i + j) <= digits && (i + j + rowLimit) > endNum && (i + j) >= endNum) {
+                        // add zero kung hindi sapat ang digits
+                        result += ",";
+
+                    } else if ((i + j + rowLimit) > endNum && (i + j) > endNum) {
+                        // add zero kung hindi sapat ang digits
+                        result += ",";
+
+                    } else if ((i + j + rowLimit) > endNum && (i + j) <= endNum) {
+                        // add zero kung hindi sapat ang digits
+                        for (var k = getlength(i + j); k < digits; k++) {
+                            result += '0';
+                        };
+                        result += (i + j);
+
+                    } else {
+                        result += (i + j) + ',';
+                    };
+                };
+                result += '\n'
+            }
+            // execute the results here
+            //console.log(columnStart);
+            var save = window.document.createElement('a');
+            save.href = window.URL.createObjectURL(new Blob([columnStart, result], { type: 'text/csv' }));
+            save.download = startNum + ' to ' + endNum + '.txt';
+
+            // Append anchor to body.
+            document.body.appendChild(save);
+            save.click();
+
+            // Remove anchor from body
+            document.body.removeChild(save);
+            //console.log(columnStart, result);
+        };
+        //iraffle();
+
+
+        // display the result in the terminal
+        // console.log(rowLimit);
+        //console.log(getlength(100));
+        //console.log(digits_count(100));
+        //console.log(digits_count(457));
+    </script>
+</head>
+
+<body>
+    <div id="mainContainer">
+        This app is created by juan salgarino
+        <div id="insideContainer">
+
+            <input type="text" class="inputs" id="startNumInput" placeholder="1" />
+            <input type="text" class="inputs" id="endNumInput" placeholder="100" />
+            <input type="text" class="inputs" id="digitsInput" placeholder="3" />
+            <input type="text" class="inputs" id="multiOutsInput" placeholder="10" />
+            <input type="button" class="btn" id="generateNumber" value="Generate Number" onclick="iraffle()"/>
+
+
+            <img id="iraffle_page" src="iraffle_form.svg" alt="iraffle_form" />
+
+        </div>
+    </div>
+
+
+</body>
+</html>
