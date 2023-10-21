@@ -2,7 +2,11 @@ p.p1 {
     margin: 0.0px 0.0px 0.0px 0.0px;
     font-family: 12.0px Arial, Helvetica, sans-serif;
 }
-
+body{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
 /* loading */
 #loading{
     width: 15%;
@@ -18,6 +22,7 @@ p.p1 {
 }
 
 /* log in page main container class */
+
 .logInPageClass{
     width: 75%;
     height: 500px;
@@ -36,6 +41,7 @@ p.p1 {
     background-color: black;
     justify-content: center;
     vertical-align: middle;
+    display: block;
 }
 
 /* log in form inputs box*/
@@ -126,46 +132,45 @@ p.p1 {
 }
 /* main container of the iraffle app */
 #mainContainer {
+    position: absolute;
     margin: auto;
     padding: 25px;
-    width: 50%;
-    height: 50%;
-    background-color: green;
-    visibility: hidden;
+    width: 100%;
+    height: 700px;
+    background-color: beige;
+    justify-content: center;
+    display: none;
 }
 
 /* the raffle app container */
 #insideContainer {
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
+    position: relative;
+    top: 45px;
     margin: auto;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 525px;
     background-color: beige;
 }
 
 #iraffle_page {
-    margin-top: 50px;
-    margin-left: 50px;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: auto;
 }
 
 .inputs {
     position: absolute;
-    width: 130px;
-    height: 35px;
-    border-radius: 15px;
+    width: 205px;
+    height: 62px;
+    border-radius: 25px;
     padding: 0px;
     font-size: 24px;
 }
 
 .btn {
     position: absolute;
-    width: 200px;
-    height: 35px;
-    border-radius: 15px;
+    width: 350px;
+    height: 70px;
+    border-radius: 25px;
     padding: 0px;
     font-size: 24px;
     color: white;
@@ -173,26 +178,26 @@ p.p1 {
 }
 
 #startNumInput {
-    top: 107px;
-    left: 265px;
+    top: 45px;
+    left: 320px;
 }
 
 #endNumInput {
-    top: 177px;
-    left: 265px;
+    top: 148px;
+    left: 320px;
 }
 
 #digitsInput {
-    top: 240px;
-    left: 265px;
+    top: 243px;
+    left: 320px;
 }
 
 #multiOutsInput {
-    top: 304px;
-    left: 265px;
+    top: 340px;
+    left: 320px;
 }
 
 #generateNumber {
-    top: 365px;
-    left: 150px;
+    top: 440px;
+    left: 120px;
 }
