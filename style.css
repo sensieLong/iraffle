@@ -1,0 +1,198 @@
+p.p1 {
+    margin: 0.0px 0.0px 0.0px 0.0px;
+    font-family: 12.0px Arial, Helvetica, sans-serif;
+}
+
+/* loading */
+#loading{
+    width: 15%;
+    height: 25px;
+    background-color: green;
+    color: white;
+    margin: auto;
+    padding: 5px 15px 10px 15px;
+    border-radius: 25px;
+    vertical-align: middle;
+    text-align: center;
+    display: none;
+}
+
+/* log in page main container class */
+.logInPageClass{
+    width: 75%;
+    height: 500px;
+    margin: 5% 10% 0% 10%;
+    padding: 25px;
+    display: flex;
+    position: relative;
+    background-color: grey;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#logInForm {
+    width: 450px;
+    height: auto;
+    background-color: black;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+/* log in form inputs box*/
+#loginFormInputs {
+    padding: 25px 10px 10px 10px;
+    margin-top: 7%;
+    margin-left: 40px;
+    width: 75%;
+    height: 80%;
+    display: block;
+    justify-content: center;
+    background-color: black;
+    border: 4px solid orange;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.loginInputs {
+    width: 250px;
+    height: 25px;
+    border-radius: 15px;
+    border: 4px solid orange;
+    margin: 10px;
+    font-size: 18px;
+}
+.allBtn {
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    border: 4px solid aqua;
+    margin: 10px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+}
+
+/* register */
+#registerForm {
+    margin-left: 25px;
+    width: 450px;
+    height: auto;
+    background-color: aqua;
+    display: block;
+}
+#registerFormInputs {
+    padding: 25px 10px 10px 10px;
+    margin-top: 7%;
+    margin-left: 40px;
+    width: 75%;
+    height: 80%;
+    display: block;
+    justify-content: center;
+    background-color: aqua;
+    border: 4px solid black;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+}
+.registerInputs {
+    width: 250px;
+    height: 25px;
+    border-radius: 15px;
+    border: 4px solid grey;
+    margin: 10px;
+    font-size: 18px;
+}
+
+#registerMessage {
+    width: 250px;
+    height: 75px;
+    border-radius: 15px;
+    border: 4px solid grey;
+    margin: 10px;
+    font-size: 18px;
+}
+.registerBtn {
+    width: 250px;
+    height: 50px;
+    border-radius: 25px;
+    border: 4px solid orange;
+    margin: 10px;
+    font-size: 24px;
+    color: black;
+    background-color: aqua;
+}
+/* main container of the iraffle app */
+#mainContainer {
+    margin: auto;
+    padding: 25px;
+    width: 50%;
+    height: 50%;
+    background-color: green;
+    visibility: hidden;
+}
+
+/* the raffle app container */
+#insideContainer {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: beige;
+}
+
+#iraffle_page {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 400px;
+    height: 400px;
+}
+
+.inputs {
+    position: absolute;
+    width: 130px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 0px;
+    font-size: 24px;
+}
+
+.btn {
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 0px;
+    font-size: 24px;
+    color: white;
+    background-color: green;
+}
+
+#startNumInput {
+    top: 107px;
+    left: 265px;
+}
+
+#endNumInput {
+    top: 177px;
+    left: 265px;
+}
+
+#digitsInput {
+    top: 240px;
+    left: 265px;
+}
+
+#multiOutsInput {
+    top: 304px;
+    left: 265px;
+}
+
+#generateNumber {
+    top: 365px;
+    left: 150px;
+}
