@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Start of HTML document, with "en" set as the default language -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="registerStyle.css">
+    <script defer type="text/javascript" src="registerMin.js"></script>
+</head>
+<body>
+    <img id="loading" class="loading" src="img/loading.gif" alt="Loading...">
+    <div id="wholeBody"> 
+        <div id="logInContainer">
+            <a id="logInPage" href="index.html">Back to LogIn</a>
+        </div>
+        
+        <div id="registerContainer" class="mainContainer">
+            <!-- Start of the body section -->
+            <form class="myForm" name="myForm">
+                <!-- Start of the form element -->
+                <input id="emailAdd" type="email" class="inputs" placeholder='Email@gmail.com'>
+                <input id="password" type="password" class="inputs" placeholder='Password'>
+                <input id="re-password" type="password" class="inputs" placeholder='Re-enter password'>
+                <input id="expiredIn" type="text" class="expiredInput" placeholder='expiredIn'>
+                <select class="inputs">
+                    <option>REGULAR</option>
+                    <option>PROMO</option>
+                    <option>VIP</option>
+                </select>
+                <input id="name" type="text" class="inputs" placeholder='enter name'>
+                <input id="lastName" type="text" class="inputs" placeholder='enter last name'>
+                <!-- Create a text input field with the "todo" class and a placeholder text -->
+                <input class="add" type="button" value="Register" onclick="addData()" />
+                <!-- Create a button with the "add" and "type" classes and an onclick event handler that calls the addData() function -->
+                <!-- Create a button with the "update" and "type" classes -->
+            </form>
+            <h3>
+                Wag po kalimutan i lagay sa gcash payment ang inyong pangalan at apelido para sa pag komperma ng inyong account.
+                Doon po kasi kami mag replay kapag na komperma na po yung account ninyo.<br /><br />
+
+                Do not forget to include your name and lastname upon payment to confirm your account.
+                We will send confirmation to your email address after the process.<br />
+                <br />
+                Expect 24 hours delay.<br /><br />
+                For any concern, please message us at enums2023@gmail.com
+                Thanks...
+            </h3>
+            <!-- End of the form element -->
+        </div>
+        
+        <div id="mainGcashContainer" class="gcashContainer">
+            <img id="gcashPayment" src="img/gcashPayment.jpg" alt="gcashPayment">
+            <h2>
+                Pakilagay po sa gcash payment ang inyong boung pangalan para po sa pag kompirma sa inyong registration.
+                <br><br>
+                Mag email po kami sa inyo kapag na kompirma na po ang inyong bayad at pwede nyio na i login ang inyong account
+                <br><br>
+                Para sa iba pang katanungan mag email lamang sa enums2023@gmail.com
+                <br><br>
+            </h2>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+/* Define some styles for the elements with the "edit" and "delete" classes */
+body {
+    margin: 0px;
+    padding: 0px;
+}
+#logInContainer{
+    margin-top: 5%;
+    margin-left: 45%;
+}
+#logInPage{
+    text-align: center;
+    font-size: 24px;
+    color: green;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 15px;
+    background-color: white;
+}
+img.loading {
+    width: 150px;
+    height: 150px;
+    margin-top: 15%;
+    margin-left: 45%;
+    border-radius: 25px;
+    position: absolute;
+    display: none;
+}
+
+.mainContainer {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 45px 10% 25px 10%;
+}
+.myForm, table {
+    width: 410px;
+    margin: 15px auto;
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.mainContainer h3 {
+    width: 35%;
+    margin: 15px auto;
+}
+.gcashContainer {
+    margin-top: 5%;
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+}
+.gcashContainer h2 {
+    width: 35%;
+    margin-left: 25px;
+}
+#gcashPayment {
+    width: auto;
+    height: 600px;
+    border-radius: 35px;
+}
+
+th, td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.edit {
+    background-color: green;
+    cursor: pointer;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+/* Define some styles for the elements with the "edit" and "delete" classes */
+.delete {
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.inputs {
+    height: 25px;
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid orange;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.expiredInput, .accountInput {
+    height: 25px;
+    width: 75px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid orange;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.dataLabel {
+    height: 25px;
+    color: red;
+}
+
+/* Define some styles for the element with the "update" class */
+.update {
+    display: none;
+    height: 35px;
+    width: auto;
+    padding: 5px;
+    border: 1px solid green;
+    border-radius: 15px;
+    color: white;
+    background-color: red;
+}
+
+.add {
+    height: 35px;
+    width: 390px;
+    padding: 5px;
+    margin-top: 5%;
+    margin-left: 2%;
+    border: 1px solid green;
+    border-radius: 15px;
+    color: white;
+    font-size: 14px;
+    background-color: green;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    img.loading {
+        width: 150px;
+        height: 150px;
+        margin-top: 15%;
+        margin-left: 38%;
+        position: absolute;
+    }
+    #logInContainer{
+        margin-top: 5%;
+        margin-left: 43%;
+    }
+    .mainContainer {
+        height: 600px;
+        display: block;
+        justify-content: center;
+    }
+    .myForm, table {
+        width: 90%;
+        border: 2px solid orange;
+        padding: 10px;
+        border-radius: 25px;
+    }
+    .mainContainer h3 {
+        width: 90%;
+    }
+    .gcashContainer {
+        margin-top: 5%;
+        display: block;
+        justify-content: center;
+        width: 100%;
+        height: 600px;
+    }
+    .gcashContainer h2 {
+        width: 90%;
+    }
+    #gcashPayment {
+        margin-left: 10%;
+        width: auto;
+        height: 600px;
+        border-radius: 35px;
+    }
+}

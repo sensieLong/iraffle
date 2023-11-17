@@ -14,28 +14,23 @@
     <div id="loading">Loading...<br />
      Please wait...
     </div>
+
+
     <div id="logInPage" class="logInPageClass">
         <div id="logInForm">
             <form id="loginFormInputs">
 
-                 Please Log In
-                <input id="loginEmail" type="text" class="loginInputs" placeholder="Please enter valid email" />
+                Please Log In
+                <input id="loginEmail" type="email" class="loginInputs" placeholder="Please enter valid email" />
                 <input id="loginPassword" type="password" class="loginInputs" placeholder="Please enter password" />
-                <button type="button" id="LogInBtn" class="allBtn" onclick="getFinalData()">Log in</button>
-            </form>
-        </div>
-        <div id="registerForm">
-            <form id="registerFormInputs">
-
-                Please Register
-                <input id="registerEmail" type="email" class="registerInputs" placeholder="Please enter valid email" />
-                <input id="registerPassword" type="text" class="registerInputs" placeholder="Please enter password" />
-                <input id="registerRePassword" type="text" class="registerInputs" placeholder="Please re-enter password" />
-                <textarea id="registerMessage" placeholder="Write your message here"></textarea>
-                <button type="button" id="RegisterBtn" class="registerBtn">Register</button>
+                <input type="button" id="LogInBtn" class="allBtn" value="Log In" onclick="getFinalData()" /><br />
+                OR<br />
+                <input type="button" id="Register" class="allBtn" value="Register" onclick="register()" />
             </form>
         </div>
     </div>
+
+
     <div id="mainContainer">
         <div id="insideContainer">
 
