@@ -1,4 +1,4 @@
-@media (min-width:1282px) { /* hi-res laptops and desktops */
+@media only screen and (min-width:1282px) { /* hi-res laptops and desktops */
     p.p1 {
         margin: 0.0px 0.0px 0.0px 0.0px;
         font-family: 12.0px Arial, Helvetica, sans-serif;
@@ -154,7 +154,7 @@
         left: 120px;
     }
 }
-@media (max-width:1281px) { /* hi-res laptops and desktops */
+@media only screen and (max-width:1281px) { /* hi-res laptops and desktops */
     p.p1 {
         margin: 0.0px 0.0px 0.0px 0.0px;
         font-family: 12.0px Arial, Helvetica, sans-serif;
@@ -310,7 +310,7 @@
         left: 120px;
     }
 }
-@media (max-width:481px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+@media only screen and (max-width:481px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
     body {
         background-color: beige;
         width: 100%;
