@@ -159,7 +159,7 @@ body{
     }
     .logInPageClass{
         width: 80%;
-        height: 2436px;
+        height: 1125px;
         margin: 5% auto;
         padding: 25px;
         display: flex;
@@ -183,16 +183,16 @@ body{
     /* log in form inputs box*/
     #loginFormInputs {
         padding: 25px 10px 10px 10px;
-        margin: 2% auto;
+        margin: 5% auto;
         width: 90%;
-        height: 95%;
+        height: 90%;
         display: block;
         justify-content: center;
         background-color: black;
         border: 4px solid orange;
         border-radius: 30px;
         text-align: center;
-        font-size: 24px;
+        font-size: 72px;
         color: white;
     }
     
@@ -201,8 +201,8 @@ body{
         height: 10%;
         border-radius: 50px;
         border: 4px solid orange;
-        margin: 3% 1%;
-        font-size: 18px;
+        margin: 5% 1%;
+        font-size: 48px;
     }
     .allBtn {
         width: 90%;
@@ -210,7 +210,7 @@ body{
         border-radius: 25px;
         border: 4px solid aqua;
         margin: 2%;
-        font-size: 24px;
+        font-size: 72px;
         color: white;
         background-color: black;
     }
