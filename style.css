@@ -7,7 +7,7 @@ body{
     margin: 0px;
     padding: 0px;
     position: relative;
-    background-color: red;
+    background-color: black;
 }
 /* loading */
 #loading {
@@ -153,9 +153,9 @@ body{
     top: 440px;
     left: 120px;
 }
-@media only screen and (max-width:481px)  { /* ..smartphones, iPhone, portrait 480x320 phones */ 
+@media only screen and (max-width:1125px)  { /* ..smartphones, iPhone, portrait 480x320 phones */ 
     body {
-        background-color: pink;
+        background-color: beige;
     }
     .logInPageClass{
         width: 80%;
