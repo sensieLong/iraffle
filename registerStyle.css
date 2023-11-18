@@ -77,13 +77,6 @@ th, td {
     border-radius: 5px;
 }
 /* Define some styles for the elements with the "edit" and "delete" classes */
-.delete {
-    background-color: red;
-    cursor: pointer;
-    color: white;
-    padding: 3px;
-    border-radius: 5px;
-}
 
 .inputs {
     height: 25px;
@@ -110,18 +103,6 @@ th, td {
     color: red;
 }
 
-/* Define some styles for the element with the "update" class */
-.update {
-    display: none;
-    height: 35px;
-    width: auto;
-    padding: 5px;
-    border: 1px solid green;
-    border-radius: 15px;
-    color: white;
-    background-color: red;
-}
-
 .add {
     height: 35px;
     width: 390px;
@@ -135,9 +116,9 @@ th, td {
     background-color: green;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
     body {
-      background-color: lightblue;
+    background-color: beige;
     }
     img.loading {
         width: 150px;
@@ -147,8 +128,17 @@ th, td {
         position: absolute;
     }
     #logInContainer{
-        margin-top: 5%;
-        margin-left: 43%;
+        margin: 25px auto;
+        width: 200px;
+    }
+    #logInPage{
+        text-align: center;
+        font-size: 24px;
+        color: green;
+        padding: 10px;
+        border: 2px solid green;
+        border-radius: 15px;
+        background-color: white;
     }
     .mainContainer {
         height: 600px;
@@ -180,4 +170,21 @@ th, td {
         height: 600px;
         border-radius: 35px;
     }
+    .add {
+        height: 35px;
+        width: 190px;
+        padding: 5px;
+        margin-top: 5%;
+        margin-left: 2%;
+        border: 1px solid green;
+        border-radius: 15px;
+        color: white;
+        font-size: 14px;
+        background-color: green;
+    }
 }
+@media (max-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (max-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (max-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (max-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (max-width:1281px) { /* hi-res laptops and desktops */ }

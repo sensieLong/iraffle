@@ -1,160 +1,293 @@
-p.p1 {
-    margin: 0.0px 0.0px 0.0px 0.0px;
-    font-family: 12.0px Arial, Helvetica, sans-serif;
-}
-body{
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-    background-color: lightgrey;
-}
-/* loading */
-#loading {
-    color: red;
-    height: 15px;
-    width: 100px;
-    border-radius: 15px;
-    background-color: beige;
-    margin: 10px auto;
-    padding: 5px;
-    text-align: center;
-    display: none;
-}
 
-/* log in page main container class */
-
-.logInPageClass{
-    width: 350px;
-    height: 500px;
-    margin: 5% auto;
-    padding: 25px;
-    display: flex;
-    position: relative;
-    background-color: white;
-    border-radius: 50px;
-    box-shadow: 1px 1px 20px 1px grey;
-    justify-content: center;
-    vertical-align: middle;
-}
-
-#logInForm {
-    width: 450px;
-    height: auto;
-    background-color: black;
-    border-radius: 30px;
-    justify-content: center;
-    display: block;
-}
-
-/* log in form inputs box*/
-#loginFormInputs {
-    padding: 25px 10px 10px 10px;
-    margin: 7% auto;
-    width: 75%;
-    height: 80%;
-    display: block;
-    justify-content: center;
-    background-color: black;
-    border: 4px solid orange;
-    border-radius: 30px;
-    text-align: center;
-    font-size: 24px;
-    color: white;
-}
-
-.loginInputs {
-    width: 250px;
-    height: 25px;
-    border-radius: 15px;
-    border: 4px solid orange;
-    margin: 10px 1%;
-    font-size: 18px;
-}
-.allBtn {
-    width: 250px;
-    height: 50px;
-    border-radius: 25px;
-    border: 4px solid aqua;
-    margin: 10px;
-    font-size: 24px;
-    color: white;
-    background-color: black;
-}
-
-/* main container of the iraffle app */
-#mainContainer {
-    position: absolute;
-    margin: auto;
-    padding: 25px;
-    width: 100%;
-    height: 700px;
-    background-color: beige;
-    justify-content: center;
-    display: none;
-}
-
-/* the raffle app container */
-#insideContainer {
-    position: relative;
-    top: 45px;
-    margin: auto;
-    width: 600px;
-    height: 525px;
-    background-color: beige;
-}
-
-#iraffle_page {
-    width: 100%;
-    height: auto;
-}
-
-.inputs {
-    position: absolute;
-    width: 205px;
-    height: 62px;
-    border-radius: 25px;
-    padding: 0px;
-    font-size: 24px;
-}
-
-.btn {
-    position: absolute;
-    width: 350px;
-    height: 70px;
-    border-radius: 25px;
-    padding: 0px;
-    font-size: 24px;
-    color: white;
-    background-color: green;
-}
-
-#startNumInput {
-    top: 45px;
-    left: 320px;
-}
-
-#endNumInput {
-    top: 148px;
-    left: 320px;
-}
-
-#digitsInput {
-    top: 243px;
-    left: 320px;
-}
-
-#multiOutsInput {
-    top: 340px;
-    left: 320px;
-}
-
-#generateNumber {
-    top: 440px;
-    left: 120px;
-}
-
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+@media (max-width:1281px) { /* hi-res laptops and desktops */
+    p.p1 {
+        margin: 0.0px 0.0px 0.0px 0.0px;
+        font-family: 12.0px Arial, Helvetica, sans-serif;
     }
+    body{
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        background-color: lightgrey;
+    }
+    /* loading */
+    #loading {
+        color: red;
+        height: 15px;
+        width: 100px;
+        border-radius: 15px;
+        background-color: beige;
+        margin: 10px auto;
+        padding: 5px;
+        text-align: center;
+        display: none;
+    }
+    
+    /* log in page main container class */
+    
+    .logInPageClass{
+        width: 350px;
+        height: 500px;
+        margin: 5% auto;
+        padding: 25px;
+        display: flex;
+        position: relative;
+        background-color: white;
+        border-radius: 50px;
+        box-shadow: 1px 1px 20px 1px grey;
+        justify-content: center;
+        vertical-align: middle;
+    }
+    
+    #logInForm {
+        width: 450px;
+        height: auto;
+        background-color: black;
+        border-radius: 30px;
+        justify-content: center;
+        display: block;
+    }
+    
+    /* log in form inputs box*/
+    #loginFormInputs {
+        padding: 25px 10px 10px 10px;
+        margin: 7% auto;
+        width: 75%;
+        height: 80%;
+        display: block;
+        justify-content: center;
+        background-color: black;
+        border: 4px solid orange;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+    }
+    
+    .loginInputs {
+        width: 250px;
+        height: 25px;
+        border-radius: 15px;
+        border: 4px solid orange;
+        margin: 10px 1%;
+        font-size: 18px;
+    }
+    .allBtn {
+        width: 250px;
+        height: 50px;
+        border-radius: 25px;
+        border: 4px solid aqua;
+        margin: 10px;
+        font-size: 24px;
+        color: white;
+        background-color: black;
+    }
+    
+    /* main container of the iraffle app */
+    #mainContainer {
+        position: absolute;
+        margin: auto;
+        padding: 25px;
+        width: 100%;
+        height: 700px;
+        background-color: beige;
+        justify-content: center;
+        display: none;
+    }
+    
+    /* the raffle app container */
+    #insideContainer {
+        position: relative;
+        top: 45px;
+        margin: auto;
+        width: 600px;
+        height: 525px;
+        background-color: beige;
+    }
+    
+    #iraffle_page {
+        width: 100%;
+        height: auto;
+    }
+    
+    .inputs {
+        position: absolute;
+        width: 205px;
+        height: 62px;
+        border-radius: 25px;
+        padding: 0px;
+        font-size: 24px;
+    }
+    
+    .btn {
+        position: absolute;
+        width: 350px;
+        height: 70px;
+        border-radius: 25px;
+        padding: 0px;
+        font-size: 24px;
+        color: white;
+        background-color: green;
+    }
+    
+    #startNumInput {
+        top: 45px;
+        left: 320px;
+    }
+    
+    #endNumInput {
+        top: 148px;
+        left: 320px;
+    }
+    
+    #digitsInput {
+        top: 243px;
+        left: 320px;
+    }
+    
+    #multiOutsInput {
+        top: 340px;
+        left: 320px;
+    }
+    
+    #generateNumber {
+        top: 440px;
+        left: 120px;
+    }
+}
+@media (max-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+    body {
+        background-color: beige;
+        width: 100%;
+    }
+    .logInPageClass{
+        width: 80%;
+        height: 425px;
+        margin: 5% auto;
+        padding: 25px;
+        display: flex;
+        position: relative;
+        background-color: white;
+        border-radius: 50px;
+        box-shadow: 1px 1px 20px 1px grey;
+        justify-content: center;
+        vertical-align: middle;
+    }
+    
+    #logInForm {
+        width: 450px;
+        height: auto;
+        background-color: black;
+        border-radius: 30px;
+        justify-content: center;
+        display: block;
+    }
+    
+    /* log in form inputs box*/
+    #loginFormInputs {
+        padding: 25px 10px 10px 10px;
+        margin: 7% auto;
+        width: 75%;
+        height: 80%;
+        display: block;
+        justify-content: center;
+        background-color: black;
+        border: 4px solid orange;
+        border-radius: 30px;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+    }
+    
+    .loginInputs {
+        width: 90%;
+        height: 25px;
+        border-radius: 15px;
+        border: 4px solid orange;
+        margin: 10px 1%;
+        font-size: 18px;
+    }
+    .allBtn {
+        width: 90%;
+        height: 50px;
+        border-radius: 25px;
+        border: 4px solid aqua;
+        margin: 10px;
+        font-size: 24px;
+        color: white;
+        background-color: black;
+    }
+    
+    /* main container of the iraffle app */
+    #mainContainer {
+        position: absolute;
+        margin: auto;
+        padding: 0px;
+        width: 100%;
+        height: 400px;
+        background-color: beige;
+        justify-content: center;
+        display: none;
+        background-color: beige;
+    }
+    
+    /* the raffle app container */
+    #insideContainer {
+        position: relative;
+        top: 45px;
+        margin: auto;
+        width: 90%;
+        height: 250px;
+        background-color: beige;
+    }
+    
+    #iraffle_page {
+        width: 100%;
+        height: auto;
+    }
+    
+    .inputs {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        padding: 0px;
+        font-size: 24px;
+    }
+    
+    .btn {
+        position: absolute;
+        width: 225px;
+        height: 30px;
+        border-radius: 25px;
+        padding: 0px;
+        font-size: 24px;
+        color: white;
+        background-color: green;
+    }
+    
+    #startNumInput {
+        top: 20px;
+        left: 152px;
+    }
+    
+    #endNumInput {
+        top: 70px;
+        left: 152px;
+    }
+    
+    #digitsInput {
+        top: 115px;
+        left: 152px;
+    }
+    
+    #multiOutsInput {
+        top: 161px;
+        left: 152px;
+    }
+    
+    #generateNumber {
+        top: 210px;
+        left: 25px;
+    }    
 }
