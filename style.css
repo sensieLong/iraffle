@@ -270,7 +270,7 @@
     .btn {
         position: absolute;
         width: 75%;
-        height: 45%;
+        height: 35%;
         border-radius: 40px;
         padding: 0px;
         font-size: 24px;
@@ -279,27 +279,27 @@
     }
     
     #startNumInput {
-        top: 28%;
+        top: 20%;
         left: 53%;
     }
     
     #endNumInput {
-        top: 98%;
+        top: 70%;
         left: 53%;
     }
     
     #digitsInput {
-        top: 162%;
+        top: 120%;
         left: 53%;
     }
     
     #multiOutsInput {
-        top: 225%;
+        top: 170%;
         left: 53%;
     }
     
     #generateNumber {
-        top: 295%;
+        top: 220%;
         left: 12%;
     }    
 }
