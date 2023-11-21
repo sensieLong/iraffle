@@ -231,7 +231,7 @@
     }
     
     /* main container of the iraffle app */
-    #mainContainer {
+    #iraffleContainer {
         position: absolute;
         margin: auto;
         padding: 0px;
@@ -284,22 +284,22 @@
     }
     
     #endNumInput {
-        top: 70%;
+        top: 80%;
         left: 53%;
     }
     
     #digitsInput {
-        top: 120%;
+        top: 140%;
         left: 53%;
     }
     
     #multiOutsInput {
-        top: 170%;
+        top: 200%;
         left: 53%;
     }
     
     #generateNumber {
-        top: 220%;
+        top: 260%;
         left: 12%;
     }    
 }

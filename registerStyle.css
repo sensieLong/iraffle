@@ -157,13 +157,12 @@ th, td {
         margin: 5% auto;
         display: block;
         width: 100%;
-        height: 600px;
-        background-color: red;
+        height: auto;
     }
     #gcashPayment {
         margin: 3% auto;
         width: 100%;
-        height: 1200px;
+        height: auto;
         border-radius: 35px;
     }
     #gcashInstructions {
