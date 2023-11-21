@@ -231,7 +231,7 @@
     }
     
     /* main container of the iraffle app */
-    #iraffleContainer {
+    #mainContainer {
         position: absolute;
         margin: auto;
         padding: 0px;
