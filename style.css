@@ -117,7 +117,17 @@
         border-radius: 25px;
         padding: 0px;
         font-size: 24px;
+        text-align: center;
+        color: blue;
     }
+    ::placeholder {
+        color: red;
+        opacity: 1; /* Firefox */
+      }
+      
+      ::-ms-input-placeholder { /* Edge 12-18 */
+        color: red;
+      }
 
     .btn {
         position: absolute;
